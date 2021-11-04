@@ -1,0 +1,14 @@
+.u-mb-300 { margin-bottom: 2rem !important; }
+
+.u-mb-500 { margin-bottom: 4rem !important; }
+
+.u-mb-700 { 
+    margin-bottom: 8rem !important; 
+
+    @media screen and (max-width: $bp-300) {
+        margin-bottom: 5rem !important;
+    }
+}
+
+.u-mb-000 { margin-bottom: 0 !important; }
+

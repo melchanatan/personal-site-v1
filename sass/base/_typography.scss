@@ -1,0 +1,97 @@
+.heading-primary {
+    color: $clr-neutral-100;
+    line-height: 1.1;
+    font-weight: 400;
+
+
+    &--main {
+        font-size: clamp(40px, 8vw, 100px);
+    }
+
+    &--sub {
+        font-size: clamp(20px, 8vw, 80px);
+    }
+}
+
+
+.heading-secondary {
+    font-size: clamp(20px, 8vw, 50px);
+    color: $clr-accent;
+    font-family: $ff-display;
+    font-weight: 300;
+
+    display: flex;
+    align-items: center;
+}
+
+.static-text {
+    margin-right: 2rem;
+    color: $clr-neutral-100;
+}
+
+.paragraph {
+    color: $clr-neutral-300;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+
+    &--display {
+        font-family: $ff-display;
+        color: $clr-primary;
+        font-weight: 200;
+    }
+
+    &--display-dim {
+        font-family: $ff-display;
+        font-weight: 200;
+    }
+}
+
+.heading-numbered {
+    font-size: 3rem;
+    font-weight: 400;
+    color: $clr-neutral-100;
+    display: flex;
+    align-items: center;
+    margin-bottom: 4rem;
+
+    &::before {
+        counter-increment: sectionCounter;
+        content: "0" counter(sectionCounter) ".";
+        font-size: 2rem;
+        font-family: $ff-display;
+    }
+
+    &::after {
+        content: "";
+        display: block;
+        flex: 0 0 40%;
+        margin-left: 2rem;
+        height: 2px;
+        background-color: $clr-neutral-500;
+
+        @media screen and (max-width: $bp-300) {
+            flex: 1;
+        }
+    }
+}
+
+.heading-3 {
+    font-size: 2.5rem;
+    color: $clr-neutral-100;
+    font-weight: 400;
+
+    &--blue {
+        color: $clr-accent;
+    }
+}
+
+.heading-4 {
+    font-size: 2rem;
+    color: $clr-neutral-100;
+    font-weight: 400;
+
+    &--blue {
+        color: $clr-accent;
+    }
+}

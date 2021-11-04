@@ -1,0 +1,76 @@
+//////////////// GLOBAL RESET ///////////////
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+
+    @media screen and (max-width: $bp-100) {
+        font-size: 50%;
+    }
+    
+}
+
+/////////////////////////////////////////////
+
+body {
+    font-family: $ff-primary;
+    counter-reset: sectionCounter;
+}
+
+.container {
+    background-color: $clr-neutral-700;
+    position: relative;
+}
+.content {
+    background-color: $clr-neutral-700;
+    margin-left: $sidebar-width;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: $clr-neutral-700;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $clr-neutral-500;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+section {
+    padding: 15rem 2rem;
+
+    @media screen and (max-width: $bp-100) {
+        padding: 12rem 6rem;
+    }
+
+    @media screen and (max-width: $bp-300) {
+        padding: 12rem 2.5rem;
+    }
+
+}
+
+
+::-webkit-scrollbar:horizontal{
+    height: 4px;
+}
+
+::-webkit-scrollbar-thumb:horizontal{
+    background: #555;
+    z-index: 2;
+}

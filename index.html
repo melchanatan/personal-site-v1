@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Roboto+Mono:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>mel chanatan</title>
+</head>
+
+<body class="container">
+    
+    <div class="nav-toggle" id="mobile-menu">
+        <span class="nav-toggle__bar">&nbsp;</span>
+    </div>
+    <nav class="sidebar" data-aos="fade-right">
+        <a href="#"><img src="./img/logo.png" alt="" class="sidebar__logo"></a>
+        <ul class="nav">
+            <li class="nav__item" data-aos="fade-right">
+                <a href="#about" class="nav__link">About</a>
+            </li>
+            <li class="nav__item" data-aos="fade-right">
+                <a href="#school" class="nav__link">School</a>
+            </li>
+            <li class="nav__item" data-aos="fade-right">
+                <a href="#work" class="nav__link">Work</a>
+            </li>
+            <li class="nav__item" data-aos="fade-right">
+                <a href="#appendix" class="nav__link">Appendix</a>
+            </li>
+            <li class="nav__item" data-aos="fade-right">
+                <a href="#contact" class="nav__link">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <header class="header" id="header"> 
+            <div class="header__text-box">
+                <h1 class="heading-primary">
+                    <span class="heading-primary--sub">Hello, I'm</span><br>
+                    <span class="heading-primary--main">Mel chanatan.</span>
+                </h1>
+                <div class="heading-secondary u-mb-700">
+                    <span class="static-text">A</span>
+                    <span id="feature-text"></span>
+                </div>
+                <a href="#" class="btn">Contact me!</a>
+            </div>
+        
+            <ul class="media-box">
+                <li class="media-box__item">
+                    <a href="#" class="media-box__link"><i class="fab fa-github"></i></a>
+                    <a href="#" class="media-box__link" ><i class="fab fa-line"></i></a>
+                    <a href="#" class="media-box__link" ><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="media-box__link" ><i class="fab fa-instagram"></i></a>
+                </li>
+            </ul>
+            <span class="scroll-down">Scroll</span>
+        
+        </header>
+        <section class="about" id="about" data-aos="fade-up">
+            <h2 class="heading-numbered">About me</h2>
+            <div class="about__box-container">
+                <div class="about__text-box">
+                    <p class="paragraph">
+                        Hi, my name is chanatan sukochaiwanich.  I love coding and designing 3d printed tools or contraptions, to make my life a little less complicated. I'm also interested in astronomy, aerospace technology — and space in general.
+                    </p>
+                    <p class="paragraph">
+                        I started drawing CAD a couple years ago and then pick up coding a while after that. Forward to Now, I was lucky enough  to participate in bunch of projects and competitions acumilating experiences and skills, to one day help better people life.
+                    </p>
+                    
+                </div>
+                <div class="about__image-box">
+                    <img class="about__photo img--darken" src="./img/mel1.jpg" alt="mel">
+                </div>
+            </div>
+            <p class="paragraph">
+                These are some skills I learnt over the years.
+            </p>
+            <ul class="skills__list">
+                <li class="skills__item">
+                    <p class="paragraph">Programming</p>
+                    <p class="paragraph">Python, CSS, Sass, HTML, Javascript, C#, C</p>
+                </li>
+                <li class="skills__item">
+                    <p class="paragraph">Development Skills</p>
+                    <p class="paragraph">Web development, Machine learning, Arduino
+                    </p>
+                </li>
+                <li class="skills__item">
+                    <p class="paragraph">CAD</p>
+                    <p class="paragraph">Fusion360, Tinkercad, Solidwork</p>
+                </li>
+                <li class="skills__item">
+                    <p class="paragraph">Other.</p>
+                    <p class="paragraph">illustation, photography, leadership</p>
+                </li>
+            </ul>
+        </section>
+        <section class="school" id="school" data-aos="fade-up">
+            <h2 class="heading-numbered">Education</h2>
+            <div class="school__box-container">
+                <div class="school__selector-box">
+                    <span class="school__selector-indicator" id="sel-indicator"></span>
+                    <button class="school__selector-btn" onclick="replace(this.id)" id="sel-0">
+                        High-school
+                    </button>
+                    <button class="school__selector-btn" onclick="replace(this.id)" id="sel-1">
+                        Secondary
+                    </button>
+                    <button class="school__selector-btn" onclick="replace(this.id)" id="sel-2">
+                        Primary
+                    </button>
+                    <button class="school__selector-btn" onclick="replace(this.id)" id="sel-3">
+                        Pre-school
+                    </button>
+                </div>
+                <div class="school__panel-box">
+                    <div class="school__panel" id="panel-0">
+                        <h4 class="heading-4">Grade 9 - 12 <span class="heading-4--blue">@Bangkok Christian College</span></h4>
+                        <p class="paragraph paragraph--display">2018 - present</p>
+                        <ul class="school__list">
+                            <li class="school__list-item">
+                                <p class="paragraph">Gpa | 3.58</p>
+                            </li>
+                            <li class="school__list-item">
+                                <p class="paragraph">Got my feet wet <a class="link" href="https://www.tinkercad.com/">Tinkercad</a>, 
+                                    and then learn how to use <a class="link" href="https://www.autodesk.com/products/fusion-360/overview">Fusion 360</a> .</p>
+                            </li>
+                            <li class="school__list-item">
+                                <p class="paragraph">Learn my first programming language, then fell in love with programming and making
+                                     my life faster by scripting using <a class="link" href="https://www.python.org/">Python</a>.</p>
+                            </li>
+                            <li class="school__list-item">
+                                <p class="paragraph">Dabble in web development and web technology, now learning <a class="link" href="https://reactjs.org/">React</a>.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="school__panel" id="panel-1">
+                        <h4 class="heading-4">Grade 6 - 9 <span class="heading-4--blue">@Bangkok Christian College</span></h4>
+                        <p class="paragraph paragraph--display">2015 - 2018</p>
+                        <ul class="school__list">
+                            <li class="school__list-item">
+                                <p class="paragraph">Gpa | 3.52</p>
+                            </li>
+                            <li class="school__list-item">
+                                <p class="paragraph">I was super into drawing at this point in time, Got pretty good at it if I do say so myself ;)</p>
+                            </li>
+                            <li class="school__list-item">
+                                <p class="paragraph">My photograph was being showcase at <a class="link" href="https://www.bacc.or.th/">Bangkok Art and Cultural Centre (BACC)</a>.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="school__panel" id="panel-2">
+                        <h4 class="heading-4">Grade 1 - 6 <span class="heading-4--blue">@Bangkok Christian College</span></h4>
+                        <p class="paragraph paragraph--display">2009 - 2015</p>
+                        <ul class="school__list">
+                            <li class="school__list-item">
+                                <p class="paragraph">Gpa | 3.94</p>
+                            </li>
+                            <li class="school__list-item">
+                                <p class="paragraph">Did alot of volunteer work. Help plant trees, putting up flood barriers when the flood happen, etc.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="school__panel" id="panel-3">
+                        <h4 class="heading-4">Kindergarten <span class="heading-4--blue">@Burana Suksa School</span></h4>
+                        <p class="paragraph paragraph--display">2006 - 2009</p>
+                        <ul class="school__list">
+                            <li class="school__list-item">
+                                <p class="paragraph">Gpa | 4.00 (probably)</p>
+                            </li>
+                            <li class="school__list-item">
+                                <p class="paragraph">Nothing note worthy...</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="work" id="work" data-aos="fade-up">
+            <h2 class="heading-numbered">Thing I've done</h2>
+            <ul class="work__box-container">
+                <li class="work__project-box" data-aos="fade-up">
+                    <img src="./img/work-1.jpg" alt="work1" class="work__project-img img--darken">
+                    <div class="work__project-text-box">
+                        <p class="paragraph paragraph--display">Feature Project</p>
+                        <h3 class="heading-3 heading-3--blue u-mb-300">Ursaminor Cansat</h3>
+                        <p class="paragraph work__project-text u-mb-300">
+                            A can-size satellite, installed with a camera and stabilizer capable of detecting and counting human, to then send the number of people back to the ground station. Aiming to aid in deep forest search and rescuse operation. Taking advantage of the fact that Cansat is launched into the sky by a rocket, which can theoretically be send further into the forest, without battery limitation that drone have.
+                        </p>
+                        <p class="paragraph paragraph--display">Python Tensorflow VisualStudio Fusion360</p>
+                    </div>
+                </li>
+                <li class="work__project-box" data-aos="fade-up">
+                    <img src="./img/work-1.jpg" alt="work1" class="work__project-img img--darken">
+                    <div class="work__project-text-box">
+                        <p class="paragraph paragraph--display">Feature Project</p>
+                        <h3 class="heading-3 heading-3--blue u-mb-300">Latthikorn-001 Rover</h3>
+                        <p class="paragraph work__project-text u-mb-300">
+                            Tasked with Designing a Rover model capable of carrying out excavation and/or In-Situ Resource Utilisation (ISRU) missions on the moon. We settled on utilizing lunar regolith's chemical makeup and processing it into building materials as a foundation of human lunar colonization. The challenge lies in the harsh interstellar environment and researching ways to overcome it.                     
+                        </p>
+                        <p class="paragraph paragraph--display">SolidWork SciHub</p>
+                    </div>
+                </li>
+                <li class="work__project-box" data-aos="fade-up">
+                    <img src="./img/work-1.jpg" alt="work1" class="work__project-img img--darken">
+                    <div class="work__project-text-box">
+                        <p class="paragraph paragraph--display">Feature Project</p>
+                        <h3 class="heading-3 heading-3--blue u-mb-300">Hydroponic System</h3>
+                        <p class="paragraph work__project-text u-mb-300">
+                            In this research base project, we focus on optimizing plant growth in hydroponic systems, with airflow being our point of interest. We designed a system centerized around mass flow tested by Computational Fluid Dynamic (CFD) simulation, built four identical systems, then collected data and compared the differences in growth and the optimal airflow it takes to grow microgreens.                 
+                        </p>
+                        <p class="paragraph paragraph--display">SciHub Arduino SimScale Fusion360</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        
+        <section class="appendix" id="appendix" data-aos="fade-up">
+            <h2 class="heading-numbered">Certificate</h2>
+            <div class="appendix__box-container">
+                <p class="paragraph appendix__text">
+                    These are some certificate I got from paticipating in competitions and activities, ranging from innovation to hackathon!
+                </p>
+                <a href="#" class="btn">View more</a>
+            </div>
+            <div class="appendix__gallery">
+                <img src="./img/certi-1.jpg" alt="certificate 1" class="appendix__gallery-img img--darken ">
+                <img src="./img/certi-1.jpg" alt="certificate 1" class="appendix__gallery-img img--darken ">
+                <img src="./img/certi-1.jpg" alt="certificate 1" class="appendix__gallery-img img--darken ">
+                <img src="./img/certi-1.jpg" alt="certificate 1" class="appendix__gallery-img img--darken ">
+                <img src="./img/certi-1.jpg" alt="certificate 1" class="appendix__gallery-img img--darken ">
+                <img src="./img/certi-1.jpg" alt="certificate 1" class="appendix__gallery-img img--darken ">
+
+            </div>
+
+        </section>
+
+        <section class="contact" id="contact" data-aos="fade-up">
+            <p class="paragraph paragraph--display">05.Get in touch</p>
+            <h3 class="heading-3 heading-3--blue">Contact me</h3>
+            <p class="paragraph contact__text">
+                Feel free to contact me, I'm always looking for opportunities to colab and improve my skills.
+            </p>
+            <a href="mailto: chanatan@outlook.com" class="btn">Say Hi!</a>
+        </section>
+        
+        <footer class="footer">
+            <p class="footer__copyright">copyright &copy; 2021</p>
+            <p class="footer__copyright">Design & built by Mel Chanatan</p>
+        </footer>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@2.3.1/dist/core.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./scripts/typewriter-effect.js"></script>
+    <script src="./scripts/school-selector.js"></script>
+    <script src="./scripts/aos-manager.js"></script>
+    <script src="./scripts/nav-toggle.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,10 @@
+.img--darken {
+    opacity: .5;
+    border-radius: 3px;
+    box-shadow: 1rem 2rem 2rem rgba(#000, .2);
+    transition: opacity .2s;
+
+    &:hover {
+        opacity: 1;
+    }
+}

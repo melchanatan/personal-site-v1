@@ -1,0 +1,11 @@
+.footer {
+    padding: 4rem;
+    padding-top: 15rem;
+    text-align: center;
+    
+    &__copyright {
+        font-family: $ff-display;
+        color: $clr-neutral-300;
+        font-size: 1.4rem;
+    }
+}
