@@ -27,8 +27,9 @@ function replace(id) {
 }
 
 const indicator = document.getElementById("sel-indicator");
+moveIndicator(activeDiv)
 
 function moveIndicator(id) {
-    const movePx = id * 4.5;
+    const movePx = id * 4.35;
     indicator.style.top = movePx + "rem";
 }

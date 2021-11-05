@@ -5,11 +5,14 @@ AOS.init({
     mirror: true,
 });
 
+
+//// SIDEBAR-LINK ON LOAD ANIMATION MANAGER
 $('.nav li').each((index, value) => {
     $(value).attr("data-aos-delay", 200 + index * 150);
     $(value).attr("data-aos-offset", 0);
 });
 
+//// SCROLL BAR SLOW FADE
 $(window).scroll(function () {
     var scrollTop = $(this).scrollTop();
 
@@ -23,11 +26,7 @@ $(window).scroll(function () {
     });
 });
 
-$('.nav li').click(function() {
-    $('.section').removeClass('active');
-    $(this).closest('.section').addClass('active');
-});
-
+//// SIDEBAR SECTION INDICATOR
 $(document).scroll(function () {
     $('section').each(function (index) {
         if($(this).position().top <= $(document).scrollTop() && ($(this).position().top * 1.1 + $(this).outerHeight()) * 0.9 > $(document).scrollTop()) {
