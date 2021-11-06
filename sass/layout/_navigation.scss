@@ -19,6 +19,8 @@
         &:hover {
             transform: rotate(90deg);
         }
+
+        @media screen and (max-width: $bp-100) { transform: rotate(90deg); }
     }
     
 }

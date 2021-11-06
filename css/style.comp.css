@@ -216,6 +216,9 @@ section {
     transition: all .3s; }
     .sidebar__logo:hover {
       transform: rotate(90deg); }
+    @media screen and (max-width: 1100px) {
+      .sidebar__logo {
+        transform: rotate(90deg); } }
 
 .nav-blur {
   position: fixed;
@@ -335,6 +338,9 @@ section {
   align-items: center;
   padding-left: 7vw;
   overflow: hidden; }
+  @media screen and (max-width: 650px) {
+    .header {
+      height: 90vh; } }
 
 .media-box {
   position: absolute;

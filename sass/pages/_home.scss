@@ -8,6 +8,10 @@
     align-items: center;
     padding-left: 7vw;
     overflow: hidden;
+
+    @media screen and (max-width: $bp-300) {
+        height: 90vh;
+    }
 }
 
 .media-box {

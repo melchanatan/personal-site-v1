@@ -1,22 +1,45 @@
 const navToggle = $("#mobile-menu");
 const menuLinks = $(".sidebar");
 const blur = $(".nav-blur");
+const navLinks = $(".nav__link");
+const navLogo = $(".nav__logo-link");
 
-navToggle.click(() => {
+function toggleAll() {
     navToggle.toggleClass("active");
     menuLinks.toggleClass("is-active");
     blur.toggleClass("blur");
+}
+
+
+/////////////////// Toggle when event is trigger ///////////////////
+
+navToggle.click( () => {
+    toggleAll();
 })
 
+blur.click( () => {
+    toggleAll();
+})
 
-function deactivate(viewport) {
-    if (viewport.matches) { // If media query matches
+navLogo.click( () => {
+    toggleAll();
+})
+
+$(document).on('click', '.nav__link', function () {
+    toggleAll();
+});
+
+
+/////////////////// Hide All when on tablet ///////////////////
+
+var viewport = window.matchMedia("(max-width: 1000px)")
+removeAll(viewport) 
+viewport.addListener(removeAll) 
+
+function removeAll(viewport) {
+    if (viewport.matches) { 
         navToggle.removeClass("active");
         menuLinks.removeClass("is-active");
         blur.removeClass("blur");
     }
 }
-
-var viewport = window.matchMedia("(max-width: 1000px)")
-deactivate(viewport) // Call listener function at run time
-viewport.addListener(deactivate) // Attach listener function on state changes
