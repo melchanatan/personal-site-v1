@@ -28,8 +28,16 @@ $(window).scroll(function () {
 
 //// SIDEBAR SECTION INDICATOR
 $(document).scroll(function () {
+    var contactSectionTop = $('.contact').position().top-400;
     $('section').each(function (index) {
-        if($(this).position().top <= $(document).scrollTop() && ($(this).position().top * 1.1 + $(this).outerHeight()) * 0.9 > $(document).scrollTop()) {
+        if ($(document).scrollTop() >= contactSectionTop) {
+            console.log("s" + contactSectionTop +"")
+            navLinkActive(4);
+
+        } else if($(this).position().top <= $(document).scrollTop()  && (($(this).position().top) * 1.1 + $(this).outerHeight()) * 0.9 > $(document).scrollTop()) {
+            console.log("w" + $(document).scrollTop())
+            console.log("s" + contactSectionTop +"")
+
             navLinkActive(index);
         }
     });

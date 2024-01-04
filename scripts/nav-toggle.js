@@ -26,7 +26,9 @@ navLogo.click( () => {
 })
 
 $(document).on('click', '.nav__link', function () {
-    toggleAll();
+    blur.removeClass("blur");
+    menuLinks.removeClass("is-active");
+
 });
 
 
