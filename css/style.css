@@ -287,7 +287,7 @@ section {
     .nav-toggle__bar, .nav-toggle__bar::before, .nav-toggle__bar::after {
       width: 3rem;
       height: 2px;
-      background-color: #fff;
+      background-color: #fff !important;
       display: inline-block; }
     .nav-toggle__bar::before, .nav-toggle__bar::after {
       content: "";
